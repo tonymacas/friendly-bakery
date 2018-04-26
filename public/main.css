@@ -10,8 +10,17 @@
     box-shadow: 0;
 }
 
-.cookies-img {
-    width: 10px;
-    height: 10px;
+.cookies {
+    width: 200px;
+    height: 200px;
+}
+
+.cakes{
+    width: 200px;
+    height: 200px;
+}
+.muffin {
+    width: 200px;
+    height: 200px;
 }
 

@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-<link href="main.css">
-  <title>Tony's Sweet World</title>
+      <link rel="stylesheet" href="main.css">
+  <title>Tony's Sweet World</title> 
 <body>
-    
+    <div class="navbar-fixed">
+  <nav>
+    <div class="navigation nav-wrapper">
+      <a href="#!" class="brand-logo">Tony</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down" id="mobile-demo">
+        <li><a href="/cookies">Cookies</a></li>
+        <li><a href="/cakes">Cakes</a></li>
+        <li><a href="/muffins">Muffins</a></li>
+      </ul>
+    </div>
+  </nav>
+  </div>
 <%= yield %>
+
 </body>
 
 </html>
