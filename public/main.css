@@ -18,13 +18,13 @@
     box-shadow: 0;
 }
 
-#text1, #text2, #text3 {
+.yes {
     color: #7c4dff;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Lato', sans-serif;
     text-align: center;
 }
 
-#cookies1, #cookies2, #cookies3, #cookies4 {
+/* #cookies1, #cookies2, #cookies3, #cookies4 {
     width: 400px;
     height: 400px;
 }
@@ -32,10 +32,12 @@
 #cake1, #cake2, #cake3, #cake4 {
     width: 400px;
     height: 400px;
+} */
+
+.price {
+    color: #7c4dff;
+    font-size: 25px;
 }
 
-#muffin1, #muffin2, #muffin3, #muffin4 {
-    width: 400px;
-    height: 400px;
-}
+
 
