@@ -1,56 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Tony's Sweet World</title>
-<link rel="icon" href="images/sweet.png" type="image/baker.png" sizes="16x16">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="main.css">
+  <title>Tony's Sweet World</title>
+  <link rel="icon" href="images/sweet.png" type="image/baker.png" sizes="16x16">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
   <div class="navbar-fixed">
     <nav>
       <div class="navigation nav-wrapper">
-         <a href="#" class="brand-logo">Porto's</a>
+        <a href="#" class="brand-logo">Porto's</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger">
           <i class="material-icons">menu</i>
         </a>
         <ul class="right hide-on-med-and-down" id="mobile-demo">
-          <li><a id="head" href="/">Home</a></li>
-          <li><a id="head1" href="/cookies">Cookies</a></li>
-          <li><a id="head2" href="/cakes">Cakes</a></li>
-          <li><a id="head3" href="/muffins">Muffins</a></li>
+          <li>
+            <a id="head" href="/">Home</a>
+          </li>
+          <li>
+            <a id="head1" href="/cookies">Cookies</a>
+          </li>
+          <li>
+            <a id="head2" href="/cakes">Cakes</a>
+          </li>
+          <li>
+            <a id="head3" href="/muffins">Muffins</a>
+          </li>
         </ul>
       </div>
     </nav>
   </div>
   <%= yield %>
-
+    <script src="https://maps.googleapis.com/maps/api/js?AIzaSyDwQJzyyMxbYpoYW_HISnX-qaKooBpfFxwcallback=myMap"></script>
+    <script src="main.js"></script>
 </body>
-
-        <footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2018 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-          </div>
-        </footer>
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6">
+        <h4 class="white-text">Visit us at:</h4>
+        <h5 class="grey-text text-lighten-4">90 John St.#404</h5>
+      </div>
+      <div class="col s12 m6">
+         <h5>Orlando is waiting for you</h5>
+      <iframe src="//www.google.com/maps/embed/v1/directions?origin=Tate+Modern
+      &destination=90+John Street+404
+      &key=AIzaSyDwQJzyyMxbYpoYW_HISnX-qaKooBpfFxw">
+      </iframe>
+    </div>
+  </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2018 Copyright Porto's
+    </div>
+  </div>
+</footer>
 </html>
