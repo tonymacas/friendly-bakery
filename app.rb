@@ -9,12 +9,13 @@ get '/' do
 end
 
 post "/" do
-   from = Email.new(email: 'tony@rytecare.com')
-   to = Email.new(email: 'langgafilms@gmail.com')
+   from = Email.new(email: 'foods@portos.com')
+   to = Email.new(email: 'tony@rytecare.com')
    subject = params[:name]
    content = Content.new(type: 'text/html', value: "
     
-    here it is
+    Here it is. Cookies are free.
+    It's BYOB.
     
        ")
    mail = Mail.new(from, subject, to, content)
